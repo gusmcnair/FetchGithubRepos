@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Search Github for Repos</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Get Github Repositories</h1>
+            <label for="github-handle">Github Handle</label>
+            <input name="github-handle" id="github-handle" placeholder="bobthebuilder" type="text" required>
+            <button name="submit-button" id="submit-button" type="submit">Submit</button>
+        </form>
+        <section class="repos-title">
+        <h2><span class="username"></span>'s Github Repos</h2>
+        <p>Click link to see user's full repo.</p>
+        </section>
+        <section class="display-repos">
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
